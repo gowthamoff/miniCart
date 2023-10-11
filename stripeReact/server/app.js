@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 
-// checkout api
+// checkout api working
 app.post("/api/create-checkout-session",async(req,res)=>{
     const {products} = req.body;
 
