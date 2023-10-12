@@ -33,16 +33,16 @@ app.post("/api/create-checkout-session",async(req,res)=>{
         cancel_url:"http://localhost:3000/cancel",
     });
 
-    const refund = await stripe.refunds.create({
-        payment_intent: 'pi_3O026KSD0yEYQlK21XaiItsU',
-    }); 
+    // const refund = await stripe.refunds.create({
+    //     payment_intent: 'pi_3O0G6zSD0yEYQlK21HDz7r6q',
+    // }); 
     
-    // const partial_refund = await stripe.refunds.create({
-    //     payment_intent: 'pi_3NzZstSD0yEYQlK21F3QIOn8',
-    //     amount: 1000,
-    //   });
-
-    console.log(refund)
+    const partial_refund = await stripe.refunds.create({
+        payment_intent: 'pi_3O0GlFSD0yEYQlK20PTF7qff',
+        amount: 35000, 
+      });
+    
+    console.log(partial_refund)
 
     res.json({id:session.id})
  
