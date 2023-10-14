@@ -5,8 +5,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes,Route} from "react-router-dom"
 import toast, { Toaster } from 'react-hot-toast';
-import Sucess from './components/Sucess';
+import Success from './components/Success';
 import Cancel from './components/Cancel';
+import Refund from './components/Refund';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
      <Routes>
       <Route  path='/' element={<Home />}/>
       <Route  path='/cart' element={<CartDetails />}/>
-      <Route  path='/sucess' element={<Sucess />}/>
+      <Route  path='/success' element={<Success />}/>
       <Route  path='/cancel' element={<Cancel />}/>
+      <Route  path='/refund' element={<Refund />}/>
      </Routes>
      <Toaster />
     </>

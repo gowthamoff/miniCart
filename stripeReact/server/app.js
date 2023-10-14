@@ -29,7 +29,7 @@ app.post("/api/create-checkout-session",async(req,res)=>{
         payment_method_types:["card"],
         line_items:lineItems,
         mode:"payment",
-        success_url:"http://localhost:3000/sucess",
+        success_url:"http://localhost:3000/success",
         cancel_url:"http://localhost:3000/cancel",
     });
 
@@ -37,12 +37,12 @@ app.post("/api/create-checkout-session",async(req,res)=>{
     //     payment_intent: 'pi_3O0G6zSD0yEYQlK21HDz7r6q',
     // }); 
     
-    const partial_refund = await stripe.refunds.create({
-        payment_intent: 'pi_3O0GlFSD0yEYQlK20PTF7qff',
-        amount: 35000, 
-      });
+    // const partial_refund = await stripe.refunds.create({
+    //     payment_intent: 'pi_3O0GlFSD0yEYQlK20PTF7qff',
+    //     amount: 35000, 
+    //   });
     
-    console.log(partial_refund)
+    // console.log(partial_refund)
 
     res.json({id:session.id})
  

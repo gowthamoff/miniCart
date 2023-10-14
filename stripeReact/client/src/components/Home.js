@@ -6,6 +6,7 @@ import CardsData from "./CardData";
 import { addToCart } from '../redux/features/cartSlice';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
+import { NavLink } from 'react-router-dom';
 
 
 const Home = () => {
@@ -21,7 +22,7 @@ const Home = () => {
     return (
         <>
             <section className='iteam_section mt-4 container'>
-                <h2 className='px-4' style={{ fontWeight: 400 }}>Restaurants in Ahmedabad Open now</h2>
+                <h2 className='px-4' style={{ fontWeight: 400 }}>Welcome to FarmwiseAi</h2>
                 <div className='row mt-2 d-flex justify-content-around align-items-center'>
                     {
                         cartData.map((element, index) => {
@@ -44,10 +45,15 @@ const Home = () => {
 
                                             <div className="last_data d-flex justify-content-between align-items-center">
                                                 <img src={element.arrimg} className='limg' alt="" />
-                                                <Button style={{ width: "150px", background: "#ff3054db", border: "none" }} variant='outline-light'
+                                                <Button style={{ width: "130px", background: "#ff3054db", border: "none" }} variant='outline-light'
                                                     className='mt-2 mb-2'
                                                     onClick={()=>send(element)}
                                                 >Add TO Cart</Button>
+                                                 <NavLink to="/cart" className="text-decoration-none text-light mx-2"> 
+                                                  <Button style={{ width: "100px", background: "#ff3054db", border: "none" }} variant='outline-light'
+                                                    className='mt-2 mb-2' 
+                                                >Buy</Button>
+                                                </NavLink>
                                                 <img src={element.delimg} className='laimg' alt="" />
 
                                             </div>

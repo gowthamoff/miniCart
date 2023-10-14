@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart,removeToCart ,removeSingleIteams,emptycartIteam} from '../redux/features/cartSlice';
 import toast from 'react-hot-toast';
 import {loadStripe} from '@stripe/stripe-js';
+import { NavLink } from 'react-router-dom';
 
 
 const CartDetails = () => {
@@ -100,13 +101,20 @@ const CartDetails = () => {
                     <div className="card">
                         <div className="card-header bg-dark p-3">
                             <div className='card-header-flex'>
+                                
                                 <h5 className='text-white m-0'>Cart Calculation{carts.length >0 ? `(${carts.length})`:""}</h5>
+                                <div className="d-flex">
+                                <NavLink to="/refund" className="text-decoration-none text-light mx-2">
+                                    <button  className='btn btn-danger mt-0 btn-sm' >Refund</button>
+                                </NavLink>
+               
                                 {
                                     carts.length > 0 ? <button className='btn btn-danger mt-0 btn-sm'
                                     onClick={emptycart}
                                     ><i className='fa fa-trash-alt mr-2'></i><span>EmptyCart</span></button>
                                         : ""
                                 }
+                                </div>
                             </div>
 
                         </div>
