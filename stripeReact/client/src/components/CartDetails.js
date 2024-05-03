@@ -68,6 +68,7 @@ const CartDetails = () => {
 
     // payment integration
     const makePayment = async()=>{
+        
         const stripe = await loadStripe("pk_test_51NySZ6SD0yEYQlK2snyBpLuAzwlXjh9XzbP10pPqinwpW5UidhmbnXBquYP706obRf253PpoYvP6tL1QbDpBEtkx00z7PTao1i");
 
         const body = {
@@ -104,9 +105,9 @@ const CartDetails = () => {
                                 
                                 <h5 className='text-white m-0'>Cart Calculation{carts.length >0 ? `(${carts.length})`:""}</h5>
                                 <div className="d-flex">
-                                <NavLink to="/refund" className="text-decoration-none text-light mx-2">
+                                {/* <NavLink to="/refund" className="text-decoration-none text-light mx-2">
                                     <button  className='btn btn-danger mt-0 btn-sm' >Refund</button>
-                                </NavLink>
+                                </NavLink> */}
                
                                 {
                                     carts.length > 0 ? <button className='btn btn-danger mt-0 btn-sm'

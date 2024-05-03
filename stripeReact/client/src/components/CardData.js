@@ -1,8 +1,8 @@
 const Cardsdata = [
   {
       id: 1,
-      dish: "Rice",
-      imgdata: "https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      dish: "Phosphorus",
+      imgdata: "https://www.dtnpf.com/mydtn-public-core-portlet/servlet/GetStoredImage?symbolicName=copy_of_1020_pf18_nutrien_smartsulfurstrategies.jpg&category=CMS",
       delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
       somedata: " 1175 + order placed from here recently",
       price: 100,
@@ -12,8 +12,8 @@ const Cardsdata = [
   },
   {
       id: 2,
-      dish: "Wheat",
-      imgdata: "https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=600",
+      dish: "Nitrogen",
+      imgdata: "https://www.en.krishakjagat.org/wp-content/uploads/2022/06/types-of-fertilizer.jpg",
       delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
       somedata: " 2525 + order placed from here recently",
       price: 95,
@@ -23,8 +23,8 @@ const Cardsdata = [
   },
   {
       id: 3,
-      dish: "Seeds",
-      imgdata: "https://images.pexels.com/photos/401213/pexels-photo-401213.jpeg?auto=compress&cs=tinysrgb&w=600",
+      dish: "Potassium",
+      imgdata: "https://nutrien-ekonomics.com/wp-content/uploads/2020/06/Potash.jpg",
       delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
       somedata: " 650 + order placed from here recently",
       price: 70,

@@ -8,6 +8,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import Success from './components/Success';
 import Cancel from './components/Cancel';
 import Refund from './components/Refund';
+import Address from './components/Address';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route  path='/success' element={<Success />}/>
       <Route  path='/cancel' element={<Cancel />}/>
       <Route  path='/refund' element={<Refund />}/>
+      <Route  path='/address' element={<Address />}/>
      </Routes>
      <Toaster />
     </>

@@ -1,0 +1,42 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .success-icon {
+    margin-bottom: 20px;
+  }
+  
+  .success-heading {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .success-message {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .success-link {
+    text-decoration: none;
+  }
+  
+  .back-to-home-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-home-btn:hover {
+    background-color: #0056b3;
+  }
+  
